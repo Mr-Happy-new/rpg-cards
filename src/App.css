@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  color: #f8fafc;
+  background: #0f172a;
+}
+
+/* Rutnätet för korten */
+.guild-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Utseende för varje kort */
+.card {
+  padding: 1.2rem;
+  border: 2px solid #38bdf8;
+  border-radius: 0.8rem;
+  background: #1e293b;
+}
+
+/* Om hjälten är fallen */
+.card.fallen {
+  border-color: #ef4444;
+  opacity: 0.6;
+}
